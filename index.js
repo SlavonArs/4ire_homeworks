@@ -21,7 +21,7 @@ while (exchangeProces == true) {
     } while (givenCurrency.toUpperCase() !== "USD" && givenCurrency.toUpperCase() !== "EUR" && givenCurrency.toUpperCase() !== "RUB" && givenCurrency.toUpperCase() !== "PLN" && givenCurrency.toUpperCase() !== "GBP");
 
     do {
-        amount = prompt("Enter convertible amount", "100");
+        amount = +prompt("Enter convertible amount", "100");
     } while (amount < 0 || isNaN(amount) || amount == "");
 
     do {
