@@ -22,7 +22,7 @@ while (exchangeProces == true) {
 
     do {
         amount = prompt("Enter convertible amount", "100");
-    } while (amount < 0 || isNaN(amount));
+    } while (amount < 0 || isNaN(amount) || amount == "");
 
     do {
         receivedCurrency = prompt("Enter received currency", "EUR");
